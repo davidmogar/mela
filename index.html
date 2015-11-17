@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <h1>Pomodoro</h1>
+
+    <section>
+      <p id="timer"></p>
+    </section>
+
+    <section>
+      <form>
+        <input id="task-description" type="text" placeholder="Task description" required="true" />
+        <input id="task-duration" type="range" min="1" max="25" />
+        <input type="submit" val="Create" />
+      </form>
+    </section>
+
+    <section id="previous-tasks">
+      <h2>Previous tasks</h2>
+      <ul></ul>
+    </section>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/pomodoro.js"></script>
+  </body>
+</html>
