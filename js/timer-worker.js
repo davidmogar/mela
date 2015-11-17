@@ -1,7 +1,7 @@
 var interval;
 
 onmessage = function(e) {
-  cancelTimeout(interval);
+  clearTimeout(interval);
   startTimer(e.data * 60);
 }
 
@@ -20,7 +20,7 @@ function startTimer(duration) {
     postMessage({ finished: false, time: minutes + ':' + seconds });
 
     if (diff <= 0) {
-      cancelTimeout(interval);
+      clearTimeout(interval);
       postMessage({ finished: true, time: minutes + ':' + seconds });
     }
   };
