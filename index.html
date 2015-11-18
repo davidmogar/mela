@@ -18,19 +18,31 @@
       <h1><span class="green">the</span> Mela</h1>
     </header>
 
-    <section id="controls">
+    <section id="timer-panel" class="hide">
+      <p class="task"></p>
+      <p class="timer">00:00</p>
+      <div id="controls">
+        <button class="break">I need a break</button>
+        <button class="next">Go for the next one</button>
+      </div>
+    </section>
+
+    <section id="break-panel" class="hide">
+      <form>
+        <p class="duration-label">for <span>13 minutes</span></p>
+        <input class="timer-duration" type="range" min="3" max="5" />
+        <input type="submit" val="Start break" />
+      </form>
+    </section>
+
+    <section id="form-panel">
       <form>
         <input id="task-description" type="text" autocomplete="off" required="true" placeholder="Task description" />
-        <p id="duration-label">for <span>13 minutes</span></p>
-        <input id="task-duration" type="range" min="1" max="25" />
-        <input type="submit" val="Create" />
+        <p class="duration-label">for <span>13 minutes</span></p>
+        <input class="timer-duration" type="range" min="1" max="25" />
+        <input type="submit" value="Add task" />
+        <button id="start" type="button">Start working</button>
       </form>
-
-      <div id="timer-panel">
-        <p id="timer">00:00</p>
-        <button>Pause timer</button>
-        <button>I need a break</button>
-      </div>
     </section>
 
     <section id="previous-tasks">

@@ -33,28 +33,30 @@ section {
   box-sizing: border-box;
   margin: 2em auto 0;
   max-width: 800px;
-  padding: 1em 0;
+  padding: 1em 10%;
 }
 
-section#controls {
-  overflow: auto;
+section.hide {
+  display: none;
 }
 
-section#controls form {
-  float: left;
-  margin-right: 3em;
-  width: calc(60% - 3em);
+section#timer-panel p.task {
+  font-size: 1.5em;
+  font-weight: 300;
 }
 
-#timer-panel {
-  float: right;
-  width: 40%;
-}
-
-#timer-panel p {
+section#timer-panel p.timer {
   font-size: 2.5em;
   font-weight: 300;
   margin: 0.5em 0;
+}
+
+#controls {
+  display: none;
+}
+
+#controls.show {
+  display: block;
 }
 
 form {
@@ -76,7 +78,7 @@ form input[type="text"] {
   width: 100%;
 }
 
-p#duration-label span {
+p.duration-label span {
   color: #d51f23;
   font-size: 1.2em;
   font-weight: 700;
@@ -92,10 +94,6 @@ button, form input[type="submit"] {
   font-size: 1.1em;
   outline: none;
   padding: 0.4em 1em;
-}
-
-section#previous-tasks {
-  padding: 1em 10%;
 }
 
 section#previous-tasks h2 {
