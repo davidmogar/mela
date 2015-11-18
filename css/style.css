@@ -33,10 +33,25 @@ section {
   box-sizing: border-box;
   margin: 2em auto 0;
   max-width: 800px;
-  padding: 1em 10%;
+  padding: 1em 0;
 }
 
-section#controls p {
+section#controls {
+  overflow: auto;
+}
+
+section#controls form {
+  float: left;
+  margin-right: 3em;
+  width: calc(60% - 3em);
+}
+
+#timer-panel {
+  float: right;
+  width: 40%;
+}
+
+#timer-panel p {
   font-size: 2.5em;
   font-weight: 300;
   margin: 0.5em 0;
@@ -77,6 +92,10 @@ button, form input[type="submit"] {
   font-size: 1.1em;
   outline: none;
   padding: 0.4em 1em;
+}
+
+section#previous-tasks {
+  padding: 1em 10%;
 }
 
 section#previous-tasks h2 {

@@ -19,18 +19,18 @@
     </header>
 
     <section id="controls">
-      <p id="timer">00:00</p>
-      <button>Pause timer</button>
-      <button>I need a break</button>
-    </section>
-
-    <section>
       <form>
         <input id="task-description" type="text" autocomplete="off" required="true" placeholder="Task description" />
         <p id="duration-label">for <span>13 minutes</span></p>
         <input id="task-duration" type="range" min="1" max="25" />
         <input type="submit" val="Create" />
       </form>
+
+      <div id="timer-panel">
+        <p id="timer">00:00</p>
+        <button>Pause timer</button>
+        <button>I need a break</button>
+      </div>
     </section>
 
     <section id="previous-tasks">
