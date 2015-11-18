@@ -16,6 +16,7 @@ timerWorker.onmessage = function(e) {
     if (tasks.length > 0) {
       showTimerControls();
     } else {
+      timerWorker.terminate();
       showFinishMessage();
     }
   }
