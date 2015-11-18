@@ -1,2 +1,2 @@
-# pomodore
-Pomodore timer
+# Mela
+Task timer
