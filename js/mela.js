@@ -7,6 +7,7 @@ timerWorker.onmessage = function(e) {
   if (e.data.finished) {
     if (!inBreak) {
       showNotification((tasks.shift()).description);
+      localStorage.setItem('tasks', JSON.stringify(tasks));
       $('#previous-tasks ol li:first-child').remove();
       updateListNumbering();
     }
@@ -101,6 +102,7 @@ function createTask(description, duration) {
 function deleteTask(element) {
   var index = element.siblings('span.number').text().substring(0, -1);
   tasks.splice(index - 1, 1);
+  localStorage.setItem('tasks', JSON.stringify(tasks));
   element.closest('li').remove();
   updateListNumbering();
 }
