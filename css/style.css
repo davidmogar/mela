@@ -96,33 +96,33 @@ button, form input[type="submit"] {
   padding: 0.4em 1em;
 }
 
-section#previous-tasks h2 {
+section#previous-tasks-panel h2 {
   font-weight: 400;
   margin-top: 0;
 }
 
-section#previous-tasks ol {
+section#previous-tasks-panel ol {
   list-style-type: none;
   text-align: left;
 }
 
-section#previous-tasks ol li {
+section#previous-tasks-panel ol li {
   margin-bottom: 20px;
 }
 
-section#previous-tasks ol li span.number {
+section#previous-tasks-panel ol li span.number {
   color: #dadada;
   font: bold italic 35px/1 Helvetica, Verdana, sans-serif;
   margin-right: 1em;
 }
 
-section#previous-tasks ol li span.delete {
+section#previous-tasks-panel ol li span.delete {
   color: #d51f23;
   cursor: pointer;
   margin-left: 1em;
 }
 
-section#previous-tasks ol li span.delete:hover {
+section#previous-tasks-panel ol li span.delete:hover {
   border-bottom: 1px solid #d51f23;
 }
 
